@@ -1,0 +1,45 @@
+main {
+	padding: 80px 5% 60px;
+}
+
+main h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 42px;
+	margin-bottom: 30px;
+}
+
+.gallery {
+	display: grid;
+
+	gap: 20px;
+}
+
+.card {
+	background-color: #111;
+	border-radius: 10px;
+
+	padding-bottom: 15px;
+}
+
+.card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	/* display: block; */
+}
+
+.card h3 {
+	font-size: 18px;
+	margin: 15px 15px 8px 15px;
+}
+
+.card p {
+	color: #a3a3a3;
+	font-size: 13px;
+	margin: 0 15px;
+}
+
+	main h1 {
+		font-size: 28px;
+	}
+}

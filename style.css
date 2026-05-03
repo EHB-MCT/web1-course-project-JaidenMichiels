@@ -1,25 +1,142 @@
-@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Google+Sans:opsz@17..18&family=Sekuya&display=swap");
-
-html,
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Permanent+Marker&display=swap");
 body {
 	margin: 0;
-	padding: 0;
+	color: #fff;
+	font-family: "DM Mono", sans-serif;
+	background: linear-gradient(180deg, #05051a 0%, #0a0a2e 50%, #06060f 100%);
+	min-height: 100vh;
 }
 
 .navigatie {
+	width: calc(100% - 20px);
+	height: 40px;
+	background-color: #000;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
-	background: #c1e2be;
+	padding: 10px;
+	position: fixed;
 }
 
 .logo {
-	font-family: "Averia Serif Libre";
-	font-size: 2.4rem;
-	color: black;
+	font-size: 18px;
+	font-weight: 700;
 }
 
 .logo span {
-	color: #c76e00;
+	color: #c97b3a;
+}
+
+.navigatie li {
+	display: inline;
+	padding-right: 20px;
+}
+
+a {
+	border-radius: 5px;
+	padding: 8px 18px;
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #2d2d2d;
+}
+
+header {
+	height: 100vh;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.intro-flex {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+
+.intro {
+	width: 35%;
+}
+
+.tag {
+	background-color: #483a2b;
+	color: #fff;
+	border-radius: 5px;
+	padding: 5px 14px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+header h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 52px;
+	line-height: 1.1;
+}
+
+.groen {
+	color: #7bc67e;
+}
+
+header p {
+	color: #a3a3a3;
+	line-height: 1.7;
+}
+
+.knoppen {
+	display: flex;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+a.knop-oranje {
+	background-color: #e86a1a;
+	color: #fff;
+	border: 1px solid #c97b3a;
+	font-weight: bold;
+}
+
+a.knop-oranje:hover {
+	background-color: #7a3700;
+}
+
+a.knop-leeg {
+	border: 1px solid #7bc67e;
+	color: #7bc67e;
+}
+
+a.knop-leeg:hover {
+	background-color: #2d2d2d;
+}
+
+@media screen and (max-width: 1024px) {
+	.navigatie li.no-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		background-image: none;
+	}
+
+	.intro {
+		width: 100%;
+	}
+
+	header h1 {
+		font-size: 36px;
+	}
+
+	.navigatie li {
+		padding-right: 0;
+	}
+
+	.navigatie li:last-child {
+		padding-left: 10px;
+	}
 }
