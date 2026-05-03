@@ -1,0 +1,44 @@
+main {
+	padding: 80px 5% 80px;
+}
+
+.blog-header {
+	margin-bottom: 50px;
+}
+
+.blog-header h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 48px;
+	margin: 10px 0;
+}
+
+.subtitel {
+	color: #a3a3a3;
+	font-size: 14px;
+}
+
+.blog-artikel {
+	max-width: 700px;
+}
+
+.blog-artikel h2 {
+	font-family: "Playfair Display", serif;
+	font-size: 24px;
+	margin: 40px 0 15px 0;
+	color: #fff;
+}
+
+.blog-artikel p {
+	color: #c0c0c0;
+	font-size: 15px;
+	line-height: 1.9;
+	margin-bottom: 10vh;
+}
+
+.citaat {
+	border-left: 3px solid #c97b3a;
+	padding-left: 20px;
+	color: #e0e0e0 !important;
+	font-style: italic;
+	margin: 30px 0 !important;
+}

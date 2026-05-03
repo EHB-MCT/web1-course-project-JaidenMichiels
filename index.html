@@ -7,20 +7,25 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
 		<script src="main.js"></script>
 		<title>JaidenPortfolio</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 	</head>
 	<body>
 		<div class="navigatie">
 			<h2 class="logo">Jaiden<span>Portfolio</span></h2>
 
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="werk.html">Designs</a></li>
-				</ul>
-			</nav>
-		</div>
+			<div id="myLinks">
+				<a href="index.html">Home</a>
+				<a href="blog.html">Blog</a>
+				<a href="werk.html">Designs</a>
+			</div>
 
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
 		<header>
 			<div class="wrapper">
 				<div class="intro-flex">
@@ -38,5 +43,15 @@
 				</div>
 			</div>
 		</header>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myLinks");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+		</script>
 	</body>
 </html>
